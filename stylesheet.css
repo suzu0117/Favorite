@@ -1,0 +1,268 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    border-width: 0px;
+    border-style: solid;
+    line-height: 1;
+    List-style-type: none;
+    font-size: 16px;
+    color: #432
+}
+    
+body {
+}
+
+footer {
+    height: 53px;
+    padding: 20px;
+    background-color:#333;    
+}
+
+footer p {
+    font-size: small;
+    text-align: center;
+    color: white;
+}
+
+#artist {  
+}
+
+.header {
+    position: relative;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.burger {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.burger-input {
+    display: none;
+}
+
+.burger-input:checked ~ .burger-inner {
+    transition: 0.2s;
+    background-color: mistyrose;
+    padding-right: 200px;
+    height: 100vh;
+}
+
+.burger-icon {
+    display: flex;
+    height: 60px;
+    width: 60px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+}
+
+.burger-icon span,
+.burger-icon span:before,
+.burger-icon span:after {
+    content: ' ';
+    display: block;
+    height: 3px;
+    width: 25px;
+    border-radius: 3px;
+    background: #333;
+    position: absolute;
+}
+
+.burger-icon span:before {
+    bottom: 8px;
+}
+
+.burger-icon span:after {
+    top: 8px;
+}
+
+.header-menu {
+    display: none;
+    margin-top: 20px;
+}
+    
+.burger-input:checked ~ .burger-inner .burger-icon span {
+    background-color: rgba(255,255,25,0);
+}
+
+.burger-input:checked ~ .burger-inner .burger-icon span:before {
+    bottom: 0;
+    transform: rotate(-45deg);
+}
+
+.burger-input:checked ~ .burger-inner .burger-icon span:after {
+    top:0px;
+    transform: rotate(45deg);
+}
+
+.burger-input:checked ~ .burger-inner .header-menu {
+    display: block;
+}
+
+.header-menu .header-menu-content {
+    margin-left: 22px;
+}
+
+.header-menu-content li {
+    margin-top: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header-logo {
+}
+
+.header-logo img {
+    width: 240px;
+    height: 60px;
+}
+
+#home {
+    background-color: white;
+    min-height: 100vh;
+}
+
+.wrapper {
+}
+
+.page-title {
+    font-size: 4rem;
+    font-family: 'Philosopher', serif;
+    text-align: center;
+}
+
+.top-content {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.artist-content {
+    margin-top:5%;
+    margin-bottom:10%;
+}
+
+.top-content p {
+    margin-top: 10px;
+    font-size: 1.2rem;
+}
+.artist-wrapper {
+    margin:0 7%;
+}
+
+.artist-list {
+    display: flex;
+    flex-wrap :wrap;
+}
+
+.artist-item{
+    width: 100%;
+    padding: 25px;
+}
+.artist{
+    text-align: center;
+    font-size: 18px;
+}
+.artist-image-area{
+    margin-bottom: 2px;
+    text-align: center;
+}
+.artist-image{
+    border-radius: 2px;
+    height: auto;
+    width: auto;
+    width:100%;        
+    
+}
+
+.artist p {
+    font-size: 1.3rem; 
+    font-weight: bold;
+    line-height:1.5 ;
+}
+
+.artist-introduce{
+    border-radius: 2px;
+    min-height:300px;
+    padding:10px;
+    background-color: rgba(234,246,253,0.5);
+}
+
+.artist-introduce p {
+    padding-bottom: 1rem
+    ;
+}
+
+.best-song {
+    border-radius: 2px;
+    text-align: center;
+    display:block;
+    background-color: #96917e;
+    color: white;
+    width:130px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin: 5px auto 0px;
+}
+
+.link {
+    text-align: center;
+}
+.sns {
+    font-size:1.2rem;
+    display: block;
+    margin: 3px auto;
+    border-radius: 2px;
+    padding-top:5px;
+    padding-bottom:5px;
+    width: 130px;
+    text-decoration: none;
+    color: white;
+}
+.twitter {
+    background-color: lightskyblue;
+}
+.instagram {
+    background-color: lightpink;
+}
+.youtube {
+    background-color: lightcoral;
+}
+.spotify {
+    background-color: lightgreen;
+}
+
+@media screen and (min-width:768px) {
+    .artist-item{
+        width: 50%;
+        padding: 25px;
+    }
+}
+
+@media screen and (min-width:1024px) {
+    .artist-content {
+        margin-top:5%;
+        margin-bottom:5%;
+    }
+    .artist-list {
+        display: flex;
+        flex-wrap :wrap;
+        padding-right:10%;
+        padding-left:10%;
+    }
+    .artist-item{
+        width: 25%;
+        padding: 10px;
+    }
+}
