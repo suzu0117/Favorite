@@ -194,14 +194,16 @@ a {
 
 .artist-introduce{
     border-radius: 2px;
-    min-height:300px;
     padding:10px;
     background-color: rgba(234,246,253,0.5);
 }
 
+#idol .artist-introduce{
+    min-height:300px;
+}
+
 .artist-introduce p {
-    padding-bottom: 1rem
-    ;
+    padding-bottom: 1rem;
 }
 
 .best-song {
@@ -243,15 +245,69 @@ a {
     background-color: lightgreen;
 }
 
+.game-content {
+    margin-top:5%;
+    margin-bottom:10%;
+}
+
+.game-wrapper {
+    margin:0% 7% 5%;
+}
+
+.game-item {
+    margin:5% 0;
+}
+
+.game-title {
+    text-align: center;
+    font-size: 1.5rem;
+}
+.game-image-area {
+    max-width: 100%;
+}
+
+.game-image {
+    max-width:100%;
+}
+
+iframe {
+    width:100%;
+    height: 250px;
+}
+
+.game-introduce{
+    border-radius: 2px;
+    padding:10px;
+    background-color: rgba(234,246,253,0.5);
+}
+.game-introduce p{
+    padding-bottom: 1rem;
+}
+
+.game-introduce a {
+    display: inline-block;
+    padding: 10px 10px;
+    border-radius: 2px;;
+    background-color: lightblue;
+    color: white;
+}
+
+.game-introduce a:hover {
+    background-color: lightseagreen;
+}
+
 @media screen and (min-width:768px) {
     .artist-item{
         width: 50%;
         padding: 25px;
     }
+    iframe {
+        height: 400px;
+    }
 }
 
 @media screen and (min-width:1024px) {
-    .artist-content {
+    .artist-content,.game-content {
         margin-top:5%;
         margin-bottom:5%;
     }
@@ -265,4 +321,6 @@ a {
         width: 25%;
         padding: 10px;
     }
+    iframe {
+        height: 1000px;
 }
